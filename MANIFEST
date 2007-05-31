@@ -1,0 +1,10 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/CSS/Parse/Packed.pm
+t/00.load.t
+t/01.parse.t
+t/02.get_style_by_selector.t
+t/pod.t
+META.yml                                 Module meta-data (added by MakeMaker)

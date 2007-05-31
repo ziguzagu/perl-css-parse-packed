@@ -1,0 +1,15 @@
+--- #YAML:1.0
+name:                CSS-Parse-Packed
+version:             0.01
+abstract:            A CSS::Parse module packed duplicated selectors.
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.31
+distribution_type:   module
+requires:     
+    CSS:                           0
+    Test::Base:                    0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Hiroshi Sakai <ziguzagu@gmail.com>
