@@ -85,14 +85,14 @@ This document describes CSS::Parse::Packed version 0.0.1
 This module is a parser for CSS.pm. It parsing CSS by regular expression
 based on CSS::Parse::Lite and packed duplicated selectors.
 
-=head2 Example
+=head1 EXAMPLE
 
 Original is:
 
     body { background-color:#FFFFFF; font-size: 1em; }
     body { padding:6px; font-size: 1.5em; }
 
-After parings is:
+After parsing:
 
     body { padding: 6px; background-color: #FFFFFF; font-size: 1.5em }
 

@@ -1,5 +1,6 @@
 CSS-Parse-Packed version 0.0.1
 
+A CSS::Parse module packed duplicated selectors.
 
 INSTALLATION
 
@@ -9,6 +10,14 @@ To install this module, run the following commands:
     make
     make test
     make install
+
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  CSS
+  Test::Base
 
 
 COPYRIGHT AND LICENCE
