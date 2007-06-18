@@ -44,3 +44,17 @@ body { background-color:#FFFFFF; font-size: 1em; }
 body { padding:6px; font-size: 1.5em; }
 --- expected
 body { padding: 6px; background-color: #FFFFFF; font-size: 1.5em }
+
+===
+--- input
+@charset "utf-8";
+body { color: #333333; }
+--- expected
+body { color: #333333 }
+
+===
+--- input
+@import url("http://example.com/styles.css");
+body { color: #333333; }
+--- expected
+body { color: #333333 }

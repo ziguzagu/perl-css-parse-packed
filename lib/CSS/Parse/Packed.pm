@@ -3,7 +3,7 @@ package CSS::Parse::Packed;
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base qw/CSS::Parse/;
 use Carp;
@@ -16,6 +16,7 @@ sub parse_string {
     my $string = shift;
 
     $string =~ s{\r\n|\r|\n}{ }g;
+    $string =~ s{(?:\@[\S\s]*?;)}{}g;
     $self->_parse_string($string);
     $self->_create_styles;
 }
