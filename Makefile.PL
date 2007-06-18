@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'CSS::Parse::Packed',
-    AUTHOR              => 'Hiroshi Sakai <ziguzagu@gmail.com>',
+    AUTHOR              => 'Hiroshi Sakai <ziguzagu@cpan.org>',
     VERSION_FROM        => 'lib/CSS/Parse/Packed.pm',
     ABSTRACT_FROM       => 'lib/CSS/Parse/Packed.pm',
     PL_FILES            => {},

@@ -103,11 +103,11 @@ L<CSS>, L<CSS::Parse::Lite>
 
 =head1 AUTHOR
 
-Hiroshi Sakai  C<< <ziguzagu@gmail.com> >>
+Hiroshi Sakai  C<< <ziguzagu@cpan.org> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2007, Hiroshi Sakai C<< <ziguzagu@gmail.com> >>. All rights reserved.
+Copyright (c) 2007, Hiroshi Sakai C<< <ziguzagu@cpan.org> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
