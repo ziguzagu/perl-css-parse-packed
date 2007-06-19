@@ -1,5 +1,9 @@
 Revision history for CSS-Parse-Packed
 
-0.0.1  Thu May 31 17:49:49 2007
-       Initial release.
+0.02   Thu Jun 19 2007
 
+	* Ignoring @ rule in the CSS string.
+
+0.01   Thu May 31 2007
+
+	* Initial release.

@@ -74,7 +74,7 @@ CSS::Parse::Packed - A CSS::Parse module packed duplicated selectors.
 
 =head1 VERSION
 
-This document describes CSS::Parse::Packed version 0.0.1
+This document describes CSS::Parse::Packed version 0.02
 
 =head1 SYNOPSIS
 
