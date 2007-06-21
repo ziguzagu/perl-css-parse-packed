@@ -45,14 +45,14 @@ body { padding:6px; font-size: 1.5em; }
 --- expected
 body { padding: 6px; background-color: #FFFFFF; font-size: 1.5em }
 
-===
+=== ignore @charset
 --- input
 @charset "utf-8";
 body { color: #333333; }
 --- expected
 body { color: #333333 }
 
-===
+=== ignore @import
 --- input
 @import url("http://example.com/styles.css");
 body { color: #333333; }
