@@ -58,3 +58,10 @@ body { color: #333333 }
 body { color: #333333; }
 --- expected
 body { color: #333333 }
+
+=== ignore invalid styles
+--- input
+body { #333333 }
+body { padding: 6px; }
+--- expected
+body { padding: 6px }

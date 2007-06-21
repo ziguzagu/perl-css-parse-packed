@@ -27,12 +27,12 @@ sub _parse_string {
 
     for my $str (grep { /\S/ } split /(?<=\})/, $string) {
         my ($selectors, $properties) = $str =~ m/^\s*([^{]+?)\s*\{(.*)\}\s*$/
-            or croak "Invalid style data '$_'";
+            or carp "Invalid style data '$_'", next;
 
         my @selectors = split /\s*,\s*/, $selectors;
         for my $property (grep { /\S/ } split /\;/, $properties) {
             my ($name, $val) = $property =~ m/^\s*([\w._-]+)\s*:\s*(.*?)\s*$/
-                or croak "Invalid property '$_'";
+                or carp "Invalid property '$_'", next;
             for my $selector (@selectors) {
                 $self->stash->{$selector}->{$name} = $val;
             }
