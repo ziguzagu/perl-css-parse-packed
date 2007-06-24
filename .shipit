@@ -1,5 +1,5 @@
 steps = FindVersion, ChangeVersion, CheckChangeLog, DistTest, Commit, Tag, MakeDist, UploadCPAN
 
-svk.tagpattern = CSS-Parse-Packed-%v
+svk.tagpattern = %v
 
 CheckChangeLog.files = Changes
