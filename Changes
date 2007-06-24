@@ -4,6 +4,8 @@ Revision history for CSS-Parse-Packed
 
 	* Ignoring @ rule in the CSS string.
 
+	* Even if invalid styles are found, parsing css data is not stopped.
+
 0.01   Thu May 31 2007
 
 	* Initial release.

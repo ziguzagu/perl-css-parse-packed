@@ -1,5 +1,5 @@
-steps = FindVersion, ChangeVersion, CheckChangeLog, DistTest, Commit, Tag, MakeDist
+steps = FindVersion, ChangeVersion, CheckChangeLog, DistTest, Commit, Tag, MakeDist, UploadCPAN
 
-svk.tagpattern = //local/public/CSS-Parse-Packed/tags/CSS-Parse-Packed-%v
+svk.tagpattern = CSS-Parse-Packed-%v
 
 CheckChangeLog.files = Changes
