@@ -21,7 +21,7 @@ Makefile.PL
 MANIFEST
 META.yml
 README
-t/00.load.t
-t/01.parse.t
-t/02.get_style_by_selector.t
+t/00-compile.t
+t/01-parse.t
+t/02-get_style_by_selector.t
 xt/pod.t
