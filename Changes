@@ -1,5 +1,13 @@
 Revision history for CSS-Parse-Packed
 
+0.03   Man Apr 27 2009
+
+	* Using Module::Install instead of MakeMaker.
+
+	* Changed test file names.
+
+	* No code changes.
+
 0.02   Thu Jun 19 2007
 
 	* Ignoring @ rule in the CSS string.
