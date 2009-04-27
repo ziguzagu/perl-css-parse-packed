@@ -6,6 +6,7 @@ all_from 'lib/CSS/Parse/Packed.pm';
 requires 'CSS';
 # tests
 tests 't/*.t';
+author_tests 'xt';
 use_test_base;
 # misc
 auto_include;
