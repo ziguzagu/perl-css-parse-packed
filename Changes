@@ -1,5 +1,9 @@
 Revision history for CSS-Parse-Packed
 
+0.04   Thu Oct 08 2009
+
+    * Fixed warning messages.
+
 0.03   Man Apr 27 2009
 
 	* Using Module::Install instead of MakeMaker.
