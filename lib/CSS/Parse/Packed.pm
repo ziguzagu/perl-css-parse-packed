@@ -3,7 +3,7 @@ package CSS::Parse::Packed;
 use warnings;
 use strict;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use base qw/CSS::Parse/;
 use Carp;
