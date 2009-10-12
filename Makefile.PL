@@ -3,7 +3,7 @@ use inc::Module::Install;
 name 'CSS-Parse-Packed';
 all_from 'lib/CSS/Parse/Packed.pm';
 # dependencies
-requires 'CSS';
+requires 'CSS' => '1.08';
 # tests
 tests 't/*.t';
 author_tests 'xt';
