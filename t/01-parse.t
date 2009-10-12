@@ -11,7 +11,8 @@ sub styles {
 }
 
 filters {
-    input => [ qw/lines styles/ ],
+    input    => [ qw( lines styles ) ],
+    expected => [ qw( lines styles ) ],
 };
 run_compare;
 
