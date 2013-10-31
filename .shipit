@@ -1,6 +1,0 @@
-steps = FindVersion, ChangeVersion, CheckChangeLog, DistTest, Commit, Tag, MakeDist, UploadCPAN, Twitter
-git.tagpattern = %v
-git.push_to = origin
-twitter.config = ~/.twitter
-twitter.distname = CSS-Parse-Packed
-twitter.message = shipped %d %v - soon at %u
