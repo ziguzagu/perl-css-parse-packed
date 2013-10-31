@@ -2,10 +2,6 @@
 
 CSS::Parse::Packed - A CSS::Parse module packed duplicated selectors.
 
-# VERSION
-
-This document describes CSS::Parse::Packed version 0.02
-
 # SYNOPSIS
 
     use CSS;
