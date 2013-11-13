@@ -1,5 +1,10 @@
 Revision history for CSS-Parse-Packed
 
+0.06   Wed Nov 13 2013
+
+	* Fix tests for perl 5.18
+    * Package by Minilla
+
 0.05   Mon Oct 12 2009
 
 	* Requires CSS 1.08.
