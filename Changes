@@ -2,8 +2,6 @@ Revision history for CSS-Parse-Packed
 
 {{$NEXT}}
 
-0.06 2013-11-13T10:48:20Z
-
   - Fix tests for perl 5.18
   - Package by Minilla
 
