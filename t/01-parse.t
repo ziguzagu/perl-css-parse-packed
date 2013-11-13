@@ -1,68 +1,59 @@
 use strict;
 use warnings;
 
-use Test::Base;
+use Test::More;
 use CSS;
 
-sub styles {
+sub _parse {
     my $css = CSS->new({ parser => 'CSS::Parse::Packed' });
-    $css->parse_string($_) for @_;
-    $css->output;
+    $css->parse_string(@_);
+    return $css->output;
 }
 
-filters {
-    input    => [ qw( lines styles ) ],
-    expected => [ qw( lines styles ) ],
-};
-run_compare;
-
-__END__
-
-===
---- input
+subtest 'merge element simple' => sub {
+    my $css = _parse(<<CSS);
 body { background-color:#FFFFFF; }
 body { padding:6px; }
---- expected
-body { padding: 6px; background-color: #FFFFFF }
+CSS
 
-===
---- input
-.content { background-color:#FFFFFF; }
-.content { padding:6px; }
---- expected
-.content { padding: 6px; background-color: #FFFFFF }
+    ok $css =~ /background-color:/ && $css =~ /padding:/;
+};
 
-===
---- input
+subtest 'merge id simple' => sub {
+    my $css = _parse(<<'CSS');
 #content { background-color:#FFFFFF; }
 #content { padding:6px; }
---- expected
-#content { padding: 6px; background-color: #FFFFFF }
+CSS
 
-===
---- input
-body { background-color:#FFFFFF; font-size: 1em; }
-body { padding:6px; font-size: 1.5em; }
---- expected
-body { padding: 6px; background-color: #FFFFFF; font-size: 1.5em }
+    ok $css =~ /background-color:/ && $css =~ /padding:/;
+};
 
-=== ignore @charset
---- input
+subtest 'merge same property' => sub {
+    my $css = _parse(<<'CSS');
+.body { background-color:#FFFFFF; font-size: 1em; }
+.body { padding:6px; font-size: 1.5em; }
+CSS
+
+    ok $css =~ /background-color:/ && $css =~ /padding:/;
+};
+
+subtest 'ignore charset && import' => sub {
+    my $css = _parse(<<'CSS');
 @charset "utf-8";
-body { color: #333333; }
---- expected
-body { color: #333333 }
-
-=== ignore @import
---- input
 @import url("http://example.com/styles.css");
 body { color: #333333; }
---- expected
-body { color: #333333 }
+CSS
 
-=== ignore invalid styles
---- input
+    like $css, qr/^body { color: \#333333 }\s*$/;
+};
+
+subtest 'ignore invalid styles' => sub {
+    my $css = _parse(<<'CSS');
 body { #333333 }
 body { padding: 6px; }
---- expected
-body { padding: 6px }
+CSS
+
+    like $css, qr/^body { padding: 6px }\s*$/;
+};
+
+done_testing;
