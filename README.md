@@ -25,7 +25,7 @@ After parsing:
 
 # SEE ALSO
 
-[CSS](http://search.cpan.org/perldoc?CSS), [CSS::Parse::Lite](http://search.cpan.org/perldoc?CSS::Parse::Lite)
+[CSS](https://metacpan.org/pod/CSS), [CSS::Parse::Lite](https://metacpan.org/pod/CSS::Parse::Lite)
 
 # AUTHOR
 
@@ -36,4 +36,4 @@ Hiroshi Sakai  `<ziguzagu@cpan.org>`
 Copyright (c) 2007, Hiroshi Sakai `<ziguzagu@cpan.org>`. All rights reserved.
 
 This module is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself. See [perlartistic](http://search.cpan.org/perldoc?perlartistic).
+modify it under the same terms as Perl itself. See [perlartistic](https://metacpan.org/pod/perlartistic).
