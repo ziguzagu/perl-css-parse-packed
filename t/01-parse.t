@@ -44,7 +44,7 @@ subtest 'ignore charset && import' => sub {
 body { color: #333333; }
 CSS
 
-    like $css, qr/^body { color: \#333333 }\s*$/;
+    like $css, qr/^body \{ color: \#333333 \}\s*$/;
 };
 
 subtest 'ignore invalid styles' => sub {
@@ -53,7 +53,7 @@ body { #333333 }
 body { padding: 6px; }
 CSS
 
-    like $css, qr/^body { padding: 6px }\s*$/;
+    like $css, qr/^body \{ padding: 6px \}\s*$/;
 };
 
 done_testing;
