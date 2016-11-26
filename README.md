@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ziguzagu/perl-css-parse-packed.png?branch=master)](https://travis-ci.org/ziguzagu/perl-css-parse-packed)
+[![Build Status](https://travis-ci.org/ziguzagu/perl-css-parse-packed.svg?branch=master)](https://travis-ci.org/ziguzagu/perl-css-parse-packed)
 # NAME
 
 CSS::Parse::Packed - A CSS::Parse module packed duplicated selectors.

@@ -2,6 +2,10 @@ Revision history for CSS-Parse-Packed
 
 {{$NEXT}}
 
+0.07 2016-11-26T13:46:49Z
+
+  - Fix tests for perl >= 5.25.7
+
 0.06 2013-11-13T14:38:01Z
 
   - Fix tests for perl 5.18
